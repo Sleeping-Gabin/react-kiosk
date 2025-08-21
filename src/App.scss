@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;  
+  font-size: 20px;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.App {
+  width: 1241px;
+  height: 3210px;
+  box-sizing: border-box;
+  padding: 60px;
+  background-image: url("./img/kiosk.png");
+  background-repeat: no-repeat;
+}
