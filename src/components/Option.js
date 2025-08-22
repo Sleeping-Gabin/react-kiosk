@@ -54,7 +54,7 @@ export default function Option(props) {
 
   return (
     <div className="option">
-      <p style={{padding: "30px 3px"}}>
+      <p style={{padding: "26px 3px"}}>
         {option.title}
         {option.type==="checkbox" ? " (최대 "+option.max+"개)" : " (필수)"}
       </p>
@@ -94,7 +94,10 @@ function OptionItem(props) {
       <label 
         className="option-item" 
         for={option.id + "-" + index}  
-        style={{height: item.icon ? "215px" : "145px"}} 
+        style={{height: item.icon 
+          ? "calc(25px * 3 + 95px)" 
+          : "calc((70px * 3 + 15px) / 2)"
+        }} 
       >
         {
           item.icon &&

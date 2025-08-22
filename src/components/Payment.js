@@ -26,13 +26,13 @@ function PaymentFooter() {
   const cart = useSelector((state) => state.order.cart);
 
   const Button = styled.button`
-    width: 200px;
-    height: 60px;
+    width: calc(70px * 3 + 15px * 2);
+    height: 50px;
     box-sizing: border-box;
     border-radius: 10px;
     border: 1px solid #004D98;
     background-color: transparent;
-    font-size: 24px;
+    font-size: 20px;
   `;
 
   return (

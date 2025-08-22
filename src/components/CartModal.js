@@ -39,12 +39,13 @@ function CartFooter(props) {
   const {cart} = props;
 
   const Button = styled.button`
-    width: 200px;
-    height: 60px;
+    width: calc(70px * 3 + 15px * 2);
+    height: 50px;
     border-radius: 10px;
+    box-sizing: border-box;
     border: 1px solid #004D98;
     background-color: transparent;
-    font-size: 24px;
+    font-size: 20px;
   `;
 
   const PointButton = styled(Button)`
@@ -94,13 +95,13 @@ function CartItem(props) {
   return (
     <div className="cart-item">
       <div className="item-info">
-        <p style={{width: "45px"}}>{index + 1}</p>
+        <p>{index + 1}</p>
         <div className="cart-img">
           <img src={process.env.PUBLIC_URL + "/img/foods/" + food.img} alt={food.name + " 이미지"} />
         </div>
         <p className="cart-name">{food.name}</p>
-        <p style={{width: "90px"}}>{count} 개</p>
-        <p style={{width: "200px"}}>
+        <p>{count} 개</p>
+        <p>
           {numToPriceStr((food.price + options.reduce((prev, cur) => prev + cur.price, 0)) * count) + " 원"}
         </p>
       </div>

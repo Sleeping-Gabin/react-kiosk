@@ -9,7 +9,7 @@ export default function Main() {
   const dispatch = useDispatch();
 
   const Button = styled.div`
-    width: 420px;
+    width: calc(70px * 4 + 15px * 3);
     box-sizing: border-box;
     padding: 50px;
     border-radius: 20px;
@@ -18,18 +18,18 @@ export default function Main() {
     font-size: 36px;
     text-align: center;
     position: absolute;
-    bottom: 200px;
+    bottom: 150px;
 
     & img {
-      width: 100px;
-      height: 100px;
+      width: 80px;
+      height: 80px;
       margin: 0 auto 30px;
     }
   `;
   
   return (
     <div className="main">
-      <Button style={{left: "130px"}} onClick={() => {
+      <Button style={{left: "100px"}} onClick={() => {
         dispatch(changeMethod("매장"));
         navigate("/menu/new");
       }}>
@@ -37,7 +37,7 @@ export default function Main() {
         매장 식사
       </Button>
 
-      <Button style={{right: "130px"}} onClick={() => {
+      <Button style={{right: "100px"}} onClick={() => {
         dispatch(changeMethod("포장"));
         navigate("/menu/new");
       }}>

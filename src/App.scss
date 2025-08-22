@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;  
-  font-size: 20px;
+  font-size: 18px;
 }
 
 ol, ul, li {
@@ -20,10 +20,8 @@ a {
 }
 
 .App {
-  width: 1241px;
-  height: 3210px;
-  box-sizing: border-box;
-  padding: 60px;
-  background-image: url("./img/kiosk.png");
-  background-repeat: no-repeat;
+  width: fit-content;
+  border-radius: 30px;
+  border: 30px solid #111;
+  background-color: #111;
 }

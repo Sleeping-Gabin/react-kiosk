@@ -10,13 +10,13 @@ export default function ReceiptModal() {
   const orderId = useSelector((state) => state.order.id);
 
   const Button = styled.button`
-    width: 200px;
-    height: 120px;
+    width: calc(70px * 3 + 15px * 2);
+    height: 100px;
     box-sizing: border-box;
     border-radius: 10px;
     border: 1px solid #004D98;
     background-color: transparent;
-    font-size: 24px;
+    font-size: 20px;
   `;
 
   const handleClick = () => {
@@ -32,11 +32,11 @@ export default function ReceiptModal() {
           <img src={process.env.PUBLIC_URL + "/img/icon/icon_receipt.svg"} alt="영수증 아이콘" />
         </div>
         <div className="payment-txt">
-          <p style={{fontSize: "24px", marginBottom: "10px"}}>주문 번호</p>
-          <p style={{fontSize: "48px", color: "#004D98"}}>{orderId}번</p>
+          <p style={{fontSize: "20px", marginBottom: "10px"}}>주문 번호</p>
+          <p style={{fontSize: "42px", color: "#004D98"}}>{orderId}번</p>
         </div>
         <div className="receipt-btn-box">
-          <Button style={{marginRight: "20px"}} onClick={handleClick}>
+          <Button style={{marginRight: "15px"}} onClick={handleClick}>
             영수증<br/>발행
           </Button>
           <Button onClick={handleClick}>

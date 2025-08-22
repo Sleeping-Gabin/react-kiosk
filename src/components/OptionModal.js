@@ -37,12 +37,12 @@ export default function OptionModal() {
   });
 
   const Button = styled.button`
-    width: 200px;
-    height: 60px;
+    width: calc(70px * 3 + 15px * 2);
+    height: 50px;
     border-radius: 10px;
     border: 1px solid #004D98;
     background-color: transparent;
-    font-size: 24px;
+    font-size: 20px;
   `;
 
   const PointButton = styled(Button)`
@@ -79,7 +79,7 @@ export default function OptionModal() {
         <div className="option-footer" 
           style={optionList.length<=0 ? {border: "none"}: {}}
         >
-          <Button style={{marginRight: "20px"}} onClick={() => navigate("/menu/" + food.cid)}>
+          <Button style={{marginRight: "15px"}} onClick={() => navigate("/menu/" + food.cid)}>
             취소
           </Button>
           <PointButton onClick={handleCartClick}>장바구니 담기</PointButton>
@@ -99,10 +99,10 @@ function FoodInfo(props) {
           <img src={process.env.PUBLIC_URL + "/img/foods/" + food.img} alt={food.name + " 이미지"} />
         </div>
         <div className="info-txt">
-          <p style={{fontSize: "32px", marginBottom: "10px"}}>
+          <p style={{fontSize: "26px", marginBottom: "10px"}}>
             {food.name}
           </p>
-          <p style={{fontSize: "24px", color: "#666"}}>
+          <p style={{fontSize: "20px", color: "#666"}}>
             {food.intro}
           </p>
         </div>
@@ -113,7 +113,7 @@ function FoodInfo(props) {
           <div className="info-btn" onClick={() => setCount(Math.max(1, count-1))}>
             <img src={process.env.PUBLIC_URL + "/img/icon/icon_minus.svg"} alt="빼기" />
           </div>
-          <p style={{fontSize: "32px"}}>{count}</p>
+          <p style={{fontSize: "26px"}}>{count}</p>
           <div className="info-btn" onClick={() => setCount(count+1)}>
             <img src={process.env.PUBLIC_URL + "/img/icon/icon_plus.svg"} alt="더하기" />
           </div>

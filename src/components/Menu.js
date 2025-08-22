@@ -40,18 +40,18 @@ function MenuBar() {
 function MenuContainer(props) {
   const {cid} = props;
   const [page, setPage] = useState(0);
-  const [foodGroups] = useState(() => groupingPerPage(foods.filter(d => d.cid === cid), 16));
+  const [foodGroups] = useState(() => groupingPerPage(foods.filter(d => d.cid === cid), 12));
 
   const PageIcon = styled.div`
-    width: 90px;
-    height: 90px;
-    margin-top: -45px;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
     position: absolute;
     top: 50%;
     ${
       (props) => props.dir==="left"
-      ? "left: calc(-90px - 20px);"
-      : "right: calc(-90px - 20px);"
+      ? "left: calc(-70px - 15px);"
+      : "right: calc(-70px - 15px);"
     }
   `
 
@@ -92,12 +92,13 @@ function MenuCart() {
   const dispatch = useDispatch();
 
   const Button = styled.button`
-    width: 200px;
-    height: 60px;
+    width: calc(70px * 3 + 15px * 2);
+    height: 50px;
+    box-sizing: border-box;
     border-radius: 10px;
     border: 1px solid #004D98;
     background-color: transparent;
-    font-size: 24px;
+    font-size: 20px;
   `;
 
   const PointButton = styled(Button)`
@@ -106,15 +107,15 @@ function MenuCart() {
   `;
 
   const CartButton = styled.div`
-    width: 40px;
-    height: 40px;
-    margin-top: -20px;
+    width: 36px;
+    height: 36px;
+    margin-top: -15px;
     position: absolute;
     top: 50%;
     ${
       (props) => props.dir==="left"
-      ? "left: 20px;"
-      : "right: 20px;"
+      ? "left: 15px;"
+      : "right: 15px;"
     }
   `;
 

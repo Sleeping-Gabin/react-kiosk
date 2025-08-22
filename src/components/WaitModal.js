@@ -31,14 +31,14 @@ export default function WaitModal() {
   }, [navigate]);
 
   const Button = styled.button`
-    width: 200px;
-    height: 60px;
+    width: calc(70px * 3 + 15px * 2);
+    height: 50px;
     box-sizing: border-box;
     border-radius: 10px;
     border: none;
     background-color: #004D98;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
   `;
 
   return (
