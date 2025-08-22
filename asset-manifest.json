@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-kiosk/static/css/main.80859747.css",
+    "main.css": "/react-kiosk/static/css/main.19f71b50.css",
     "main.js": "/react-kiosk/static/js/main.200033fa.js",
     "static/js/453.d811e87f.chunk.js": "/react-kiosk/static/js/453.d811e87f.chunk.js",
     "static/media/event_3.jpg": "/react-kiosk/static/media/event_3.bfbc35b41fcf45e6cfba.jpg",
     "index.html": "/react-kiosk/index.html",
-    "main.80859747.css.map": "/react-kiosk/static/css/main.80859747.css.map",
+    "main.19f71b50.css.map": "/react-kiosk/static/css/main.19f71b50.css.map",
     "main.200033fa.js.map": "/react-kiosk/static/js/main.200033fa.js.map",
     "453.d811e87f.chunk.js.map": "/react-kiosk/static/js/453.d811e87f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.80859747.css",
+    "static/css/main.19f71b50.css",
     "static/js/main.200033fa.js"
   ]
 }
