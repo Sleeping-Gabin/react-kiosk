@@ -508,7 +508,7 @@ $gutter: 15px;
   border-radius: 10px;
   font-size: 32px;
   position: fixed;
-  left: 1000px;
+  left: calc(50% + $column * 5 + $gutter * 6 + 100px);
   top: 40vh;
 }
 
@@ -564,7 +564,7 @@ $gutter: 15px;
   z-index: 100;
   position: fixed;
   top: 120px;
-  left: 100px;
+  left: calc(50% - $column * 5 - $gutter * 6 + 100px);
 
   .close-icon {
     width: 30px;
