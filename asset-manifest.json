@@ -1,17 +1,16 @@
 {
   "files": {
-    "main.css": "/react-kiosk/static/css/main.ef565237.css",
-    "main.js": "/react-kiosk/static/js/main.4d09ae01.js",
+    "main.css": "/react-kiosk/static/css/main.80859747.css",
+    "main.js": "/react-kiosk/static/js/main.200033fa.js",
     "static/js/453.d811e87f.chunk.js": "/react-kiosk/static/js/453.d811e87f.chunk.js",
-    "static/media/event_3.jpg": "/react-kiosk/static/media/event_3.942fe9ac91e823b54d00.jpg",
-    "static/media/kiosk.png": "/react-kiosk/static/media/kiosk.99414165f1cc51af160e.png",
+    "static/media/event_3.jpg": "/react-kiosk/static/media/event_3.bfbc35b41fcf45e6cfba.jpg",
     "index.html": "/react-kiosk/index.html",
-    "main.ef565237.css.map": "/react-kiosk/static/css/main.ef565237.css.map",
-    "main.4d09ae01.js.map": "/react-kiosk/static/js/main.4d09ae01.js.map",
+    "main.80859747.css.map": "/react-kiosk/static/css/main.80859747.css.map",
+    "main.200033fa.js.map": "/react-kiosk/static/js/main.200033fa.js.map",
     "453.d811e87f.chunk.js.map": "/react-kiosk/static/js/453.d811e87f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef565237.css",
-    "static/js/main.4d09ae01.js"
+    "static/css/main.80859747.css",
+    "static/js/main.200033fa.js"
   ]
 }
