@@ -12,10 +12,6 @@
 [배포 주소](https://sleeping-gabin.github.io/react-kiosk/)  
 <br>
 
-### 기획서
-[기획서](https://github.com/Sleeping-Gabin/react-kiosk/raw/main/plan_kiosk.pdf)  
-<br>
-
 ### 사용 기술
 ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![scss](https://img.shields.io/badge/Scss-CC6699.svg?style=for-the-badge&logo=sass&logoColor=white)
@@ -57,6 +53,9 @@
 
 ## 기능
 ### 옵션 선택
+옵션 데이터의 `type`과 `max`에 따라,  
+사용자가 각 옵션의 아이템을 터치했을 때 적절히 선택되도록 하였다.  
+
 <details>
 <summary>코드 보기</summary>
 
@@ -132,12 +131,11 @@ export default function Option(props) {
 }
 ```
 </details>
-
-옵션 데이터의 `type`과 `max`에 따라,  
-사용자가 각 옵션의 아이템을 터치했을 때 적절히 선택되도록 하였다.  
 <br>
 
 ### 장바구니
+장바구니에 상품을 추가, 삭제하고 개수를 변경할 수 있다.  
+
 <details>
 <summary>코드 보기</summary>
 
@@ -160,16 +158,22 @@ const orderSlice = createSlice({
         state.cart.splice(idx, 1);
       }
     },
-    // ...
+    changeMethod: (state, action) => { /* ... */ },
+    increaseCartCount: (state, action) => { /* ... */ },
+    addCartItem: (state, action) => { /* ... */ },
+    deleteCartItem: (state, action) => { /* ... */ },
+    clearCart: (state) => { /* ... */ },
+    clearOrder: (state) => { /* ... */ }
   }
 });
 ```
 </details>
-
-장바구니에 상품을 추가, 삭제하고 개수를 변경할 수 있다.  
 <br>
 
 ### 결제
+`Outlet`을 이용해 기존 페이지에 모달창을 띄운다.  
+결제는 임시 생성된 버튼으로 진행하고, 60초가 지나면 자동 취소된다.  
+
 <details>
 <summary>코드 보기</summary>
 
@@ -221,10 +225,6 @@ export default function WaitModal() {
 }
 ```
 </details>
-
-`Outlet`을 이용해 기존 페이지에 모달창을 띄운다.  
-결제는 임시 생성된 버튼으로 진행하고, 60초가 지나면 자동 취소된다.  
-
 <br><br>
 
 ## 데이터 구조
