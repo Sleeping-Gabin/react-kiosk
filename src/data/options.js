@@ -226,12 +226,12 @@ const options = [
       },
       {
         name: "뿌리공 치킨",
-        icon: "opt-porigong-chicken.png",
+        icon: "opt-purigong-chicken.png",
         price: 2000
       },
       {
         name: "뿌리공 순살 치킨",
-        icon: "opt-porigong-boneless-chicken.png",
+        icon: "opt-purigong-boneless-chicken.png",
         price: 5000
       },
       {
@@ -246,7 +246,7 @@ const options = [
       },
       {
         name: "까마코 치킨",
-        icon: "opt-kamoco-chicken.png",
+        icon: "opt-kamaco-chicken.png",
         price: 4000
       },
       {
@@ -266,7 +266,7 @@ const options = [
       },
       {
         name: "순살 쉬림프골드 치킨",
-        icon: "opt-shrimp-gold-chicken.png",
+        icon: "opt-shrimp-gold-boneless-chicken.png",
         price: 4000
       },
     ],
