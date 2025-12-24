@@ -93,11 +93,7 @@ function OptionItem(props) {
 
       <label 
         className="option-item" 
-        for={option.id + "-" + index}  
-        style={{height: item.icon 
-          ? "calc(25px * 3 + 95px)" 
-          : "calc((70px * 3 + 15px) / 2)"
-        }} 
+        for={option.id + "-" + index}
       >
         {
           item.icon &&
